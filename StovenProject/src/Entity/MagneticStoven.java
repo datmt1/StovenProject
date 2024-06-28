@@ -2,24 +2,22 @@ package Entity;
 
 import java.util.Date;
 
-//Same with Subclass GasStoven, InfraraStoven class also using inheritance concept to create InfraraStoven class extends from abstract base class Stoven
-public class InfrareStoven extends Stoven{
+//Subclass MagneticStoven extends from base class Stoven
+public class MagneticStoven extends Stoven{
     private double Wattage;
-    private boolean Cookmode;
+    private boolean Timer;
 
-    //Default constuctor
-    public InfrareStoven () {
+    public MagneticStoven() {
 
     }
 
-    //Parameterless constructor
-    public InfrareStoven(String type, String stovenID, String brand, String productCode, String productionCountry, int productionYear, int noOfStoven, double price, double salePrice, int warrantYear, double Wattage, boolean Cookmode) {
+    public MagneticStoven(String type, String stovenID, String brand, String productCode, String productionCountry, int productionYear, int noOfStoven, double price, double salePrice, int warrantYear, double Wattage, boolean Timer) {
         super(type, stovenID, brand, productCode, productionCountry, productionYear, noOfStoven, price, salePrice, warrantYear);
         this.Wattage = Wattage;
-        this.Cookmode = Cookmode;
+        this.Timer = Timer;
     }
 
-    //Getter & Setter
+    //Getter & setter
     public double getWattage() {
         return Wattage;
     }
@@ -28,15 +26,15 @@ public class InfrareStoven extends Stoven{
         Wattage = wattage;
     }
 
-    public boolean isCookmode() {
-        return Cookmode;
+    public boolean isTimer() {
+        return Timer;
     }
 
-    public void setCookmode(boolean cookmode) {
-        Cookmode = cookmode;
+    public void setTimer(boolean timer) {
+        Timer = timer;
     }
 
-    //Subclass InfraraStoven creates the body of showInfo method which been created in the Stoven class
+    ///Subclass MagneticStoven creates the body of showInfo method which been created in the Stoven class
     @Override
     public void showInfo() {
         System.out.println("Type: " + getType());
@@ -50,6 +48,6 @@ public class InfrareStoven extends Stoven{
         System.out.println("SalePrice: " + getSalePrice());
         System.out.println("WarrantYear: " + getWarrantYear());
         System.out.println("Wattage: " + Wattage);
-        System.out.println("Cookmode: " + (Cookmode ? "Flexible" : "InFlexible"));
+        System.out.println("Timer: " + (Timer ? "Yes" : "No"));
     }
 }
