@@ -5,11 +5,7 @@ import java.util.List;
 /**
  * Abstract class defining a generic Data Access Object (DAO) structure for entities.
  * @param <EntityType> The type of entity managed by the DAO.
-<<<<<<< HEAD
- * @param <KeyType> The type of the key used to uniquely identify entities
-=======
  * @param <KeyType> The type of the key used to uniquely identify entities.
->>>>>>> 8b282353ae12b81cdd816cbd4d4ff52c97ec7654
  */
 abstract public class StovenProjectDao<EntityType, KeyType> {
     abstract public void insert(EntityType entity);

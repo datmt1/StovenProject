@@ -48,11 +48,7 @@ public class InfrareStovenDao {
     }
 
     public List<InfrareStoven> selectAll(){
-<<<<<<< HEAD
-        String sql="select * FROM DataStoven";
-=======
         String sql="SELECT * FROM DataStoven";
->>>>>>> 8b282353ae12b81cdd816cbd4d4ff52c97ec7654
         return selectBySql(sql);
     }
 
