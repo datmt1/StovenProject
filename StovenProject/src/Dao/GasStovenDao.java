@@ -101,7 +101,11 @@ public class GasStovenDao extends StovenProjectDao<GasStoven, String>{
             }
         }
         catch (SQLException ex) {
+<<<<<<< HEAD
             // Handle SQL exception and throw RuntimeException.
+=======
+            // Handle SQL exception and throw RuntimeException
+>>>>>>> 8b282353ae12b81cdd816cbd4d4ff52c97ec7654
             throw new RuntimeException(ex);
         }
         return list;

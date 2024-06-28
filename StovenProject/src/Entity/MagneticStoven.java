@@ -34,7 +34,11 @@ public class MagneticStoven extends Stoven{
         Timer = timer;
     }
 
+<<<<<<< HEAD
     ///Subclass MagneticStoven creates the body of showInfo method which been created in the Stoven class.
+=======
+    ///Subclass MagneticStoven creates the body of showInfo method which been created in the Stoven class
+>>>>>>> 8b282353ae12b81cdd816cbd4d4ff52c97ec7654
     @Override
     public void showInfo() {
         System.out.println("Type: " + getType());

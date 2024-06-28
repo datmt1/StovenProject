@@ -56,7 +56,11 @@ public class MagneticStovenDao {
     }
 
     public MagneticStoven selectById(String StovenID){
+<<<<<<< HEAD
         String sql = "select * FROM DataStoven WHERE StovenID=?";
+=======
+        String sql = "SELECT * FROM DataStoven WHERE StovenID=?";
+>>>>>>> 8b282353ae12b81cdd816cbd4d4ff52c97ec7654
         List<MagneticStoven> list = selectBySql(sql, StovenID);
         return list.size() > 0 ? list.get(0) : null;
     }
