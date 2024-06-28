@@ -58,7 +58,7 @@ public class ConnectDB {
                 stmt.getConnection().close(); // Close connection after execution
             }
         } catch (SQLException e) {
-            // Wrap SQL exceptions in a runtime exception and throw
+            // Wrap SQL exceptions in a runtime exception and throw.
             throw new RuntimeException("Failed to execute update", e);
         }
     }

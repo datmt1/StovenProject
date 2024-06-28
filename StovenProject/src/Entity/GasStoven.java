@@ -27,7 +27,7 @@ public class GasStoven extends Stoven{
     }
 
 
-    //Subclass GasStoven creates the body of showInfo method which been created in the Stoven class
+    //Subclass GasStoven creates the body of showInfo method which been created in the Stoven class.
     @Override
     public void showInfo(){
         System.out.println("Type: " + getType());

@@ -36,7 +36,7 @@ public class InfrareStoven extends Stoven{
         Cookmode = cookmode;
     }
 
-    //Subclass InfraraStoven creates the body of showInfo method which been created in the Stoven class
+    //Subclass InfraraStoven creates the body of showInfo method which been created in the Stoven class.
     @Override
     public void showInfo() {
         System.out.println("Type: " + getType());

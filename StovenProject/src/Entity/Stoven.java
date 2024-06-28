@@ -2,7 +2,7 @@ package Entity;
 
 import java.util.Date;
 import java.util.Scanner;
-//Create abstract base class for all types of stoves
+//Create abstract base class for all types of stoves.
 public abstract class Stoven {
     private String Type;
     private String StovenID;
